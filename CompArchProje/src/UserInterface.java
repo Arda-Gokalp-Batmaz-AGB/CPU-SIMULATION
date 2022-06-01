@@ -43,6 +43,7 @@ public class UserInterface extends JFrame {
 				try {
 					UserInterface frame = new UserInterface();
 					frame.setVisible(true);
+					frame.setResizable(false);
 					centreWindow(frame);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -67,7 +68,7 @@ public class UserInterface extends JFrame {
 		contentPane.setLayout(null);
 		
 		instructionTxt = new JTextArea();
-		instructionTxt.setBounds(12, 13, 124, 394);
+		instructionTxt.setBounds(12, 13, 130, 394);
 		contentPane.add(instructionTxt);
 		instructionTxt.setColumns(17);
 		instructionTxt.setLineWrap(true);
